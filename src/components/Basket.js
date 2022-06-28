@@ -4,38 +4,46 @@ export default function Basket(props) {
   const { cartItems, onAdd, onRemove } = props;
   const itemsPrice = cartItems.reduce((a, c) => a + c.price * c.qty, 0);
   const taxPrice = itemsPrice * 0.14;
-  const shippingPrice = itemsPrice > 2000 ? 0 : 50;
+  const shippingPrice = itemsPrice >= 200 ? 0 : 20;
   const totalPrice = itemsPrice + taxPrice + shippingPrice;
   return (
     <div>
-      <h1>Your Cart</h1>
+      <h1 className="text-start mt-5">Your Cart</h1>
       <div>
         {cartItems.length === 0 && <div>Cart is empty</div>}
         {cartItems.map((item) => (
-          <div key={item.id} className="">
-            <div>{item.name}</div>
-            <div>
-              <button onClick={() => onAdd(item)}>+</button>
+          <div key={item.id} className="row">
+            <div className="col-1 fw-bold text-start">{item.name}</div>
+            <div className="col-3">
+              <button onClick={() => onAdd(item)}>+</button>{" "}
               <button onClick={() => onRemove(item)}>-</button>
             </div>
-            <div>
-              {item.qty} x ${item.price}
+            <div className="col-1 text-start">
+              {item.qty} x ${item.price.toFixed(2)}
             </div>
-            {cartItems.length !== 0 && (
-              <div>
-                <div>Items Price</div>
-                <div>{itemsPrice}</div>
-                <div>Tax Price</div>
-                <div>{taxPrice}</div>
-                <div>Shipping Price</div>
-                <div>{shippingPrice}</div>
-                <div>Total Price</div>
-                <div>{totalPrice}</div>
-                <button>Checkout</button>
-              </div>
-            )}
           </div>
         ))}
+        {cartItems.length !== 0 && (
+          <div className="row mb-5 text-start mt-3">
+            <div className="row">
+              <div className="col-2">Items Price</div>
+              <div className="col-1">${itemsPrice.toFixed(2)}</div>
+            </div>
+            <div className="row">
+              <div className="col-2">Tax Price</div>
+              <div className="col-1">${taxPrice.toFixed(2)}</div>
+            </div>
+            <div className="row">
+              <div className="col-2">Shipping Price</div>
+              <div className="col-1">${shippingPrice.toFixed(2)}</div>
+            </div>
+            <div className="row">
+              <div className="col-2">Total Price</div>
+              <div className="col-1">${totalPrice.toFixed(2)}</div>
+            </div>
+            <button className="col-3">Checkout</button>
+          </div>
+        )}
       </div>
     </div>
   );
