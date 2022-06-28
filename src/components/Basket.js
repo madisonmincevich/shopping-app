@@ -10,7 +10,9 @@ export default function Basket(props) {
     <div>
       <h1 className="text-start mt-5">Your Cart</h1>
       <div>
-        {cartItems.length === 0 && <div>Cart is empty</div>}
+        {cartItems.length === 0 && (
+          <div className="text-start">Cart is empty</div>
+        )}
         {cartItems.map((item) => (
           <div key={item.id} className="row">
             <div className="col-1 fw-bold text-start">{item.name}</div>
@@ -41,7 +43,7 @@ export default function Basket(props) {
               <div className="col-2">Total Price</div>
               <div className="col-1">${totalPrice.toFixed(2)}</div>
             </div>
-            <button className="col-3">Checkout</button>
+            <button className="col-5 mt-3">Checkout</button>
           </div>
         )}
       </div>
