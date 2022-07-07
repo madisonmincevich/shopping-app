@@ -1,3 +1,15 @@
 .App {
   text-align: center;
 }
+
+.navbar a {
+  text-decoration: none;
+}
+
+.credits a {
+  text-decoration: none;
+}
+
+.title {
+  color: black;
+}
