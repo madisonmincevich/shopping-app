@@ -1,7 +1,6 @@
 .content {
   background-image: url("https://images.pexels.com/photos/791763/pexels-photo-791763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  padding: 265px;
-
+  padding: 190px;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,11 +9,15 @@
 }
 
 .content-text {
-  background-color: blue;
-
-  padding: 10px;
+  border-bottom-left-radius: 15px;
+  padding: 20px;
 }
 
 .content-text h2 {
-  font-size: 45px;
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.content-text p {
+  font-size: 25px;
 }

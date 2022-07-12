@@ -1,5 +1,24 @@
 .App {
   text-align: center;
+  font-family: "Raleway", sans-serif;
+  background-color: #d3ddda;
+}
+
+.navbar a {
+  color: #151514;
+}
+
+.navbar a:hover {
+  color: #ee550e;
+}
+
+.banner {
+  background-color: #151514;
+  color: white;
+}
+
+.navbar {
+  background-color: #d3ddda !important;
 }
 
 .navbar a {
@@ -8,6 +27,11 @@
 
 .credits a {
   text-decoration: none;
+  color: #ee550e;
+}
+
+.credits a:hover {
+  color: #151514;
 }
 
 .title {

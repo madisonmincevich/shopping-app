@@ -1,0 +1,32 @@
+button {
+  color: #151514;
+  background-color: #d7f266;
+  border-radius: 30px;
+  border: 1px solid #d7f266;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.add-btn:hover {
+  background-color: #ee550e;
+  border: 1px solid #ee550e;
+}
+
+.item-name,
+.previous-price,
+.current-price {
+  margin-top: 20px;
+}
+
+.previous-price {
+  font-size: 15px;
+}
+
+.current-price {
+  font-size: 25px;
+}
+
+.description {
+  font-size: 13px;
+}

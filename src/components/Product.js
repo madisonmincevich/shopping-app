@@ -1,4 +1,5 @@
 import React from "react";
+import "../style/Product.css";
 
 export default function Product(props) {
   const { product, onAdd } = props;
@@ -10,18 +11,17 @@ export default function Product(props) {
         className="img-fluid rounded"
       />
       <div className="row">
-        <h3 className="col-8 text-start">{product.name}</h3>
-        <span className="col-2 fs-5 fw-light text-decoration-line-through">
-          ${product.previousprice}
-        </span>
+        <h3 className="item-name col-8 text-start">{product.name}</h3>
 
-        <span className="col-2 fs-5">${product.price}</span>
+        <span className="current-price col-2">${product.price}</span>
       </div>
       <div className="row">
-        <span className="col-sm text-start">{product.description}</span>
+        <span className="description col-sm text-start">
+          {product.description}
+        </span>
       </div>
       <div className="col-8">
-        <button onClick={() => onAdd(product)} className="float-start">
+        <button onClick={() => onAdd(product)} className="add-btn float-start">
           Add to Cart
         </button>
       </div>
