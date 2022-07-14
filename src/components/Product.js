@@ -4,7 +4,7 @@ import "../style/Product.css";
 export default function Product(props) {
   const { product, onAdd } = props;
   return (
-    <div className="col-sm-3 mb-4">
+    <div className="col-sm-3 mb-4" id="product">
       <img
         src={product.image}
         alt={product.name}

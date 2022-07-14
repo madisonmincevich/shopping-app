@@ -25,15 +25,25 @@
   text-decoration: none;
 }
 
-.credits a {
+.footer a {
   text-decoration: none;
   color: #ee550e;
 }
 
-.credits a:hover {
+.footer a:hover {
   color: #151514;
 }
 
 .title {
   color: black;
+}
+
+.footer {
+  background-color: #151514;
+  padding: 20px;
+  color: #d3ddda;
+}
+
+.footer-link {
+  font-size: 10px;
 }

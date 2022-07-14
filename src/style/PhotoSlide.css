@@ -1,0 +1,22 @@
+.carousel {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.carousel-inner {
+  width: 100%;
+  max-height: 600px !important;
+}
+
+.carousel-caption {
+  bottom: 30% !important;
+}
+
+.carousel-indicators li {
+  background-color: #ee550e !important;
+  background-color: rgba(70, 70, 70, 0.25) !important;
+}
+
+.carousel-indicators .active {
+  background-color: #ee550e !important;
+}
