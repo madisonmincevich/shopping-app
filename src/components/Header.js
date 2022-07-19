@@ -9,7 +9,7 @@ export default function Header(props) {
         <a href="#/user" className="userIcon me-5 ms-5">
           <FontAwesomeIcon icon={faUser} />
         </a>
-        <a href="#/cart" className="cartIcon me-5 ms-5">
+        <a href="#basket" className="cartIcon me-5 ms-5">
           <FontAwesomeIcon icon={faCartShopping} />{" "}
           {props.countCartItems ? <span>{props.countCartItems}</span> : " "}
         </a>

@@ -38,7 +38,7 @@ function App() {
   };
   return (
     <div className="App" id="home">
-      <div className="banner text-center">
+      <div className="banner text-center p-1">
         FREE SHIPPING ON ORDERS OVER $200
       </div>
       <nav className="navbar navbar-expand-lg sticky-top">
