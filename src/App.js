@@ -45,9 +45,11 @@ export default function App() {
             >
               <ul className="navbar-nav mb-2 mb-lg-0 ms-auto me-4">
                 <li className="nav-item pe-5">
-                  <a href="#product" className="me-5">
-                    PRODUCTS
-                  </a>
+                  <Link to="/">
+                    <a href="#product" className="me-5">
+                      PRODUCTS
+                    </a>
+                  </Link>
                 </li>
                 <li className="nav-item pe-5">
                   <Link to="/blog">
@@ -74,6 +76,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/blog" element={<Blog />}></Route>
+          <Route path="/" element={<Home />}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/checkout" element={<Checkout />}></Route>
         </Routes>
