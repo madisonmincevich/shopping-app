@@ -1,5 +1,7 @@
 import React from "react";
 import "../style/Basket.css";
+import { Link, Routes, Route } from "react-router-dom";
+import Checkout from "./Checkout";
 
 export default function Basket(props) {
   const { cartItems, onAdd, onRemove } = props;
@@ -44,10 +46,15 @@ export default function Basket(props) {
               <div className="col-2 fw-bold">Total Price</div>
               <div className="col-1 fw-bold">${totalPrice.toFixed(2)}</div>
             </div>
-            <button className="col-5 mt-3 mb-5">Checkout</button>
+            <Link to="/checkout">
+              <button className="col-5 mt-3 mb-5">Checkout</button>
+            </Link>
           </div>
         )}
       </div>
+      <Routes>
+        <Route path="/checkout" element={<Checkout />}></Route>
+      </Routes>
     </div>
   );
 }
