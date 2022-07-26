@@ -6,3 +6,27 @@
   padding: 8px;
   margin-top: 0px;
 }
+
+.modal-body .row {
+  margin-bottom: 10px;
+}
+
+.modal-body input {
+  border-radius: 2px;
+  border: 1px solid grey;
+}
+
+.btn-primary {
+  background-color: #ee550e !important;
+  border: 1px solid #ee550e;
+}
+
+.dumbell {
+  font-size: 35px;
+  color: #ee550e;
+  margin: 0px;
+}
+
+.thankyou {
+  font-size: 40px;
+}
