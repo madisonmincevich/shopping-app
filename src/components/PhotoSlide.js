@@ -37,7 +37,7 @@ export default function PhotoSlide() {
               src="https://images.pexels.com/photos/4754144/pexels-photo-4754144.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 "
               className="d-block w-100"
-              alt="..."
+              alt="Boxer"
             />
             <div className="carousel-caption d-md-block">
               <h5 className="fw-bold">Fuel Your Body</h5>
@@ -52,7 +52,7 @@ export default function PhotoSlide() {
               src="https://images.pexels.com/photos/136404/pexels-photo-136404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 "
               className="d-block w-100"
-              alt="..."
+              alt="Woman on Leg Press Machine"
             />
             <div className="carousel-caption  d-md-block ">
               <h5 className="fw-bold">Push Yourself</h5>
@@ -66,7 +66,7 @@ export default function PhotoSlide() {
             <img
               src="https://images.pexels.com/photos/3112004/pexels-photo-3112004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               className="d-block w-100"
-              alt="..."
+              alt="Man working Out"
             />
             <div className="carousel-caption d-md-block">
               <h5>Become Stronger</h5>

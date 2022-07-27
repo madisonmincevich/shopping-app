@@ -94,6 +94,7 @@ export default function Login() {
         data-bs-toggle="modal"
         href="#exampleModalToggle4"
         role="button"
+        alt="Login Button"
       >
         <FontAwesomeIcon icon={faUser} />
       </a>

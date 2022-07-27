@@ -300,6 +300,7 @@ export default function Basket(props) {
                 data-bs-toggle="modal"
                 href="#exampleModalToggle"
                 role="button"
+                alt="Checkout"
               >
                 Checkout
               </a>
