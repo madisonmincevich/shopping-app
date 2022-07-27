@@ -25,13 +25,17 @@
   text-decoration: none;
 }
 
+.nav-item {
+  padding-right: 3rem;
+}
+
 .footer a {
   text-decoration: none;
   color: #ee550e;
 }
 
 .footer a:hover {
-  color: #151514;
+  color: #d7f266;
 }
 
 .title {
@@ -46,4 +50,18 @@
 
 .footer-link {
   font-size: 10px;
+}
+
+@media (max-width: 844px) {
+  .navbar-nav {
+    text-align: end;
+  }
+
+  .nav-item a {
+    margin-right: 0px !important;
+  }
+
+  .nav-item {
+    padding-right: 0rem;
+  }
 }

@@ -39,7 +39,7 @@ export default function PhotoSlide() {
               className="d-block w-100"
               alt="..."
             />
-            <div className="carousel-caption d-none d-md-block">
+            <div className="carousel-caption d-md-block">
               <h5 className="fw-bold">Fuel Your Body</h5>
               <p>
                 Choose from our selection of the finest protein bars and
@@ -54,7 +54,7 @@ export default function PhotoSlide() {
               className="d-block w-100"
               alt="..."
             />
-            <div className="carousel-caption d-none d-md-block ">
+            <div className="carousel-caption  d-md-block ">
               <h5 className="fw-bold">Push Yourself</h5>
               <p>
                 Featuring premium top of the line workout equipment to push
@@ -68,7 +68,7 @@ export default function PhotoSlide() {
               className="d-block w-100"
               alt="..."
             />
-            <div className="carousel-caption d-none d-md-block">
+            <div className="carousel-caption d-md-block">
               <h5>Become Stronger</h5>
               <p>
                 Enhance your strength with great quality weight lifting sets on

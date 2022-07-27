@@ -1,0 +1,22 @@
+.login {
+  margin-left: 1400px;
+}
+
+.loginbtn {
+  background-color: #ee550e;
+  position: fixed;
+  border-radius: 50%;
+}
+
+@media (max-width: 844px) {
+  .login {
+    width: 180%;
+    margin-left: 0px;
+  }
+
+  .login input {
+    margin: 10px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+}

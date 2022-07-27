@@ -4,11 +4,12 @@ import React, { useState } from "react";
 import Main from "./components/Main";
 import Basket from "./components/Basket";
 import Content from "./components/Content";
+import Login from "./components/Login";
 import PhotoSlide from "./components/PhotoSlide";
 import Header from "./components/Header";
 import data from "./data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export default function App() {
   const { products } = data;
@@ -52,7 +53,7 @@ export default function App() {
             />
           </a>
 
-          <h2 className="title me-5 ms-5">Fitness Website</h2>
+          <h2 className="title me-5 ms-5">Muscle Fitness</h2>
           <button
             className="navbar-toggler"
             type="button"
@@ -62,22 +63,16 @@ export default function App() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon mt-1">
+              <FontAwesomeIcon icon={faBars} />
+            </span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mb-2 mb-lg-0 ms-auto me-4">
-              <li className="nav-item pe-5">
-                <a href="#product" className="me-5">
-                  PRODUCTS
-                </a>
+              <li className="nav-item">
+                <a href="#product">PRODUCTS</a>
               </li>
-
-              <li className="nav-item pe-5">
-                <a href="#/login" className="userIcon  ms-5">
-                  <FontAwesomeIcon icon={faUser} />
-                </a>
-              </li>
-              <li className="nav-item pe-5">
+              <li className="nav-item">
                 <Header countCartItems={cartItems.length} />
               </li>
             </ul>
@@ -86,12 +81,14 @@ export default function App() {
       </nav>
 
       <Content />
+      <Login />
       <div className="container">
         <PhotoSlide />
         <Main products={products} onAdd={onAdd} />
 
         <Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />
       </div>
+
       <footer className="footer mt-4">
         <small className="credits">
           <a

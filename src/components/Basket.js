@@ -59,31 +59,33 @@ export default function Basket(props) {
         )}
         {cartItems.map((item) => (
           <div key={item.id} className="row mb-3">
-            <div className="col-2 fw-bold text-start fs-5">{item.name}</div>
+            <div className="itemname col-2 fw-bold text-start fs-5">
+              {item.name}
+            </div>
             <div className="addRemoveBtn col-2">
               <button onClick={() => onAdd(item)}>+</button>{" "}
               <button onClick={() => onRemove(item)}>-</button>
             </div>
-            <div className="col-3 text-start fs-5">
+            <div className="quantity col-3 text-start fs-5">
               {item.qty} x ${item.price.toFixed(2)}
             </div>
           </div>
         ))}
         {cartItems.length !== 0 && (
           <div className="row text-start mt-5">
-            <div className="row mb-1">
+            <div className="price row mb-1">
               <div className="col-2">Items Price</div>
               <div className="col-1">${itemsPrice.toFixed(2)}</div>
             </div>
-            <div className="row mb-1">
+            <div className="price row mb-1">
               <div className="col-2">Tax Price</div>
               <div className="col-1">${taxPrice.toFixed(2)}</div>
             </div>
-            <div className="row mb-1">
+            <div className="price row mb-1">
               <div className="col-2">Shipping Price</div>
               <div className="col-1">${shippingPrice.toFixed(2)}</div>
             </div>
-            <div className="row mb-1">
+            <div className="price row mb-1">
               <div className="col-2 fw-bold">Total Price</div>
               <div className="col-1 fw-bold">${totalPrice.toFixed(2)}</div>
             </div>
@@ -122,47 +124,34 @@ export default function Basket(props) {
                               name="phone"
                               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                               placeholder="Phone number"
-                              required
                             />
                           </div>
                         </div>
                         <div className="row">
                           <div className="col-6">
-                            <input
-                              type="text"
-                              placeholder="First Name"
-                              required
-                            />
+                            <input type="text" placeholder="First Name" />
                           </div>
                           <div className="col-6">
-                            <input
-                              type="text"
-                              placeholder="Last Name"
-                              required
-                            />
+                            <input type="text" placeholder="Last Name" />
                           </div>
                         </div>
                         <p className="fs-5">Shipping Information</p>
 
                         <div className="shipping-address ms-2 me-2">
                           <div className="row">
-                            <input
-                              type="text"
-                              placeholder="Street Address"
-                              required
-                            />
+                            <input type="text" placeholder="Street Address" />
                           </div>
                           <div className="row">
                             <input type="text" placeholder="Apt/Unit #" />
                           </div>
                           <div className="row">
-                            <input type="text" placeholder="City" required />
+                            <input type="text" placeholder="City" />
                           </div>
                           <div className="row">
-                            <input type="text" placeholder="State" required />
+                            <input type="text" placeholder="State" />
                           </div>
                           <div className="row">
-                            <input type="text" placeholder="Zipcode" required />
+                            <input type="text" placeholder="Zipcode" />
                           </div>
                         </div>
                       </form>
@@ -202,6 +191,7 @@ export default function Basket(props) {
                       ></button>
                     </div>
                     <div className="modal-body">
+                      <p>Enter Your Payment Details Below</p>
                       <form>
                         <div className="row p-3">
                           <input
@@ -233,17 +223,17 @@ export default function Basket(props) {
                             </div>
                           </div>
                         </div>
-                        <div className="row fs-2 ms-3">
-                          <div className="col-sm-3">
+                        <div className=" row fs-2 ms-3">
+                          <div className="paymentIcons col-sm-3">
                             <FontAwesomeIcon icon={faCcVisa} />
                           </div>
-                          <div className="col-sm-3">
+                          <div className="paymentIcons col-sm-3">
                             <FontAwesomeIcon icon={faApplePay} />
                           </div>
-                          <div className="col-sm-3">
+                          <div className="paymentIcons col-sm-3">
                             <FontAwesomeIcon icon={faCcPaypal} />
                           </div>
-                          <div className="col-sm-3">
+                          <div className="paymentIcons col-sm-3">
                             <FontAwesomeIcon icon={faCcAmazonPay} />
                           </div>
                         </div>
@@ -306,7 +296,7 @@ export default function Basket(props) {
                 </div>
               </div>
               <a
-                className="btn btn-primary"
+                className="checkout btn btn-primary"
                 data-bs-toggle="modal"
                 href="#exampleModalToggle"
                 role="button"

@@ -19,6 +19,16 @@
 .btn-primary {
   background-color: #ee550e !important;
   border: 1px solid #ee550e;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+  border: 1px solid #ee550e;
+}
+
+.checkout {
+  padding-left: 230px;
+  padding-right: 230px;
 }
 
 .dumbell {
@@ -29,4 +39,38 @@
 
 .thankyou {
   font-size: 40px;
+}
+
+@media (max-width: 844px) {
+  .itemname {
+    font-size: 20px !important;
+    margin: 10px;
+  }
+
+  .addRemoveBtn {
+    padding: 0px;
+    margin-top: 15px;
+  }
+
+  .quantity {
+    font-size: 15px !important;
+    margin-top: 20px;
+  }
+
+  .price {
+    font-size: 15px;
+  }
+
+  .checkout {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .paymentIcons {
+    width: 25%;
+  }
+
+  .thankyou {
+    font-size: 25px;
+  }
 }
